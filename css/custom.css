@@ -770,8 +770,7 @@ ul.list a:active li{
 
 .w100{
 	width:100%;}
-.task-otr{
-	padding-top:305px;}
+.task-otr{}
 .tasks{
 	padding:15px;
 	border-bottom:1px solid #b2b2b2;}
@@ -797,13 +796,15 @@ ul.list a:active li{
 	float:left;
 	color:#fff;
 	background:#00abd2;
-	font-size:21px;
+	font-size:17px;
 	line-height:41px;
 	width:150px;
 	margin:0;
 	text-align:center;
 	border-left:1px solid #009abd;
-	box-sizing:border-box;}
+	box-sizing:border-box;
+	text-shadow:none;
+	font-weight:600;}
 
 .slide-space{
 	background:#00abd2;height:41px;overflow:hidden;
@@ -822,4 +823,9 @@ ul.list a:active li{
 	top:0;
 	right:0;
 	z-index:99;}
+.btn-large:not(.btn-info):not(.btn-success){
+	color:#696a6e;}
 	
+.btn-large{
+	font-size:17px !important;
+	font-weight:600 !important;}
