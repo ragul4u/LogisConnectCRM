@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<!--<link href="css/jquery.mobile.css" rel="stylesheet" media="screen"> -->
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<link href="css/prettyCheckable.css" rel="stylesheet" media="screen">
+<link href="css/custom.css" rel="stylesheet" media="screen">
+<link href="css/ret.css" rel="stylesheet" media="screen">
+
+
+
+	
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<div class="outer_space bg-grey-tex" data-role="page" >
+
+
+
+<div class="otr_ctr">
+	<header>
+    	<a href="#" class="i-back"></a>
+        <a href="#" class="i-edit"></a>
+    	<i class="i-title-detail"></i>
+    	
+    </header>
+    
+    <section class="fixed">
+    <div class="pad15">
+    	<div class="row-fluid">
+        	<div class="span2">
+            	<input type="checkbox" class="pt">
+            </div>
+            <div class="span10">
+            	<div class="big_black">Some Task</div>
+                <div class="med_grey">Sigur Ros</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide-space">
+    <img src="img/rfad.png" class="rfad" height="42" width="85">
+    <img src="img/lfad.png" class="lfad" height="42" width="85">
+    
+    <div id="slideshow" class="dragdealer">
+    <div class="handle">
+    	<div class="stat slide">Prospect</div>
+        <div class="stat slide">Qualified</div>
+        <div class="stat slide">Closure</div>
+        <div class="stat slide">psyhill</div>
+        <div class="stat slide">psyhill</div>
+       </div>
+    </div>
+    </div>
+    
+    
+    <div class="btns-otr">
+    	<button class="btn btn-large w100" data-role="none">Led Zep</button>
+        <div class="spacer12"></div>
+        <button class="btn btn-large btn-info w100" data-role="none">Tool</button>
+        <div class="spacer12"></div>
+        <button class="btn btn-large btn-success w100" data-role="none">Radiohead</button>
+        <div class="spacer12"></div>
+        <button class="btn btn-large btn-danger w100" data-role="none">Kubrick</button>
+    </div>
+    
+    
+    	
+    </section>
+   
+    
+    <div class="task-otr">
+    	<div class="tasks">
+        	<div class="row-fluid">
+        	<div class="span2">
+            	<input type="checkbox" class="pt mtFIX">
+            </div>
+            <div class="span10">
+            	<div class="big_black">Some Task</div>
+                <div class="med_grey">Sigur Ros</div>
+                <div class="med_blue">Mogwai</div>
+            </div>
+        </div>
+        </div>
+        <div class="tasks">
+        	<div class="row-fluid">
+        	<div class="span2">
+            	<input type="checkbox" class="pt mtFIX">
+            </div>
+            <div class="span10">
+            	<div class="big_black">Some Task</div>
+                <div class="med_grey">Sigur Ros</div>
+                <div class="med_blue">Mogwai</div>
+            </div>
+        </div>
+        </div>
+        <div class="tasks">
+        	<div class="row-fluid">
+        	<div class="span2">
+            	<input type="checkbox" class="pt mtFIX">
+            </div>
+            <div class="span10">
+            	<div class="big_black">Some Task</div>
+                <div class="med_grey">Sigur Ros</div>
+                <div class="med_blue">Mogwai</div>
+            </div>
+        </div>
+        </div>
+        <div class="tasks">
+        	<div class="row-fluid">
+        	<div class="span2">
+            	<input type="checkbox" class="pt mtFIX">
+            </div>
+            <div class="span10">
+            	<div class="big_black">Some Task</div>
+                <div class="med_grey">Sigur Ros</div>
+                <div class="med_blue">Mogwai</div>
+            </div>
+        </div>
+        </div>
+        <div class="tasks">
+        	<div class="row-fluid">
+        	<div class="span2">
+            	<input type="checkbox" class="pt mtFIX">
+            </div>
+            <div class="span10">
+            	<div class="big_black">Some Task</div>
+                <div class="med_grey">Sigur Ros</div>
+                <div class="med_blue">Mogwai</div>
+            </div>
+        </div>
+        </div>
+        <div class="tasks">
+        	<div class="row-fluid">
+        	<div class="span2">
+            	<input type="checkbox" class="pt mtFIX">
+            </div>
+            <div class="span10">
+            	<div class="big_black">Some Task</div>
+                <div class="med_grey">Sigur Ros</div>
+                <div class="med_blue">Mogwai</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+     </div>
+    
+    
+    
+    
+
+
+</div>
+
+<script src="js/jquery-1.9.1.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/jquery.mobile.js"></script>  -->
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="js/prettyCheckable.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+$('.pt').prettyCheckable({
+	 color: 'blue'});
+	
+function mtFix(){
+	$('.pt').each(function(index, element) {
+        if($(this).hasClass('mtFIX')){
+			$(this).parent().parent().addClass('mtFIX');	
+		}
+    });
+}	
+
+mtFix();
+	
+
+
+
+var snum = $('#slideshow .handle .slide').length;
+var hwid = snum *150;
+$('#slideshow .handle').css({'width':hwid+'px'});
+
+var hlst = hwid -150;
+
+var pos = [];
+var ls = 0;
+var ln = 0;
+var i_pos = 0;
+
+
+
+
+
+function tmS(e){
+	pos[i_pos] = e.pageX;
+	
+	var diff = pos[i_pos] -  pos[i_pos -1 ];
+	
+	i_pos ++;
+	ln = $('.handle').css('left');
+	ln = ln.substr(0, ln.length-2);
+	ln = Number(ln);
+	
+	ln = ln + diff;
+	$('.handle').css('left', ln+'px');
+	
+	
+	
+	
+};
+
+function tsS(e){
+	hand[0].ontouchmove = tmS;
+	pos = [];
+	i_pos = 0;
+	pos[i_pos] = e.pageX;
+	i_pos ++;
+	
+	
+	
+	ls = $('.handle').css('left');
+	ls = ls.substr(0, ls.length-2);
+	ls = Number(ls);
+	
+	
+	}
+function teS(e){
+	hand[0].ontouchmove = null;
+	if(ln > ls){
+		ln = ls +150;
+		
+		
+		if(ln > 0){
+			ln = 0;
+		}
+		
+	}
+	else if(ln < ls){
+		ln = ls -150;
+		if(ln < -hlst){
+			ln = -hlst;
+		}
+	}
+	else{
+		ln = ls;}
+	$('.handle').animate({'left': ln+'px'}, 'slow')
+	console.log(ln);
+	}
+	
+
+
+var hand = document.getElementsByClassName('slide-space');
+hand[0].ontouchstart = tsS;
+hand[0].ontouchend = teS;
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
