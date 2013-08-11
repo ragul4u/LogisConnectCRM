@@ -528,13 +528,13 @@ header:after{
 	width:281px;
 	margin-top:12px;
 	background: url(../img/sign_in_nor.png); 
-	background-size: 281px 44px;
+	background-size: 281px 88px;
 	height:44px;
 	border:0;
 	outline:none;}
 .btn-sign:hover, .btn-sign:active{
-	background: url(../img/sign_in_act.png); 
-	background-size: 281px 44px;}
+	background: url(../img/sign_in_nor.png) 0 -44px; 
+	background-size: 281px 88px;}
 
 .signin-otr .signup{
 	position:absolute;
